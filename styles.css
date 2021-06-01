@@ -1,0 +1,11 @@
+.edit {
+    color:blue;
+    margin-left:6px ;
+    margin-right: 6px;
+}
+
+.delete {
+        color:red;
+        margin-left:6px ;
+        margin-right: 6px;
+    }

@@ -4,9 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Notes</title>
+  <script src = "moment.min.js" defer></script>
+  <script src = "script.js" defer></script>
+  <link href="styles.css" rel ="stylesheet">
+  <title>Note Taking App</title>
 </head>
 <body>
-  
+  <div class="container">
+    <h1>Notes</h1>
+    <form id="noteapp">
+      <textarea name="myTextBox" cols="40" rows="4" id="note-text" onfocus="this.value=''">
+      Type notes here...
+      </textarea>
+      <br/>
+      <input type="submit">
+      </form>
+      <section id="allnotes">
+        <ul id="note-list"></ul>
+      </section>
+  </div>
 </body>
 </html>
