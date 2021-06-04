@@ -1,11 +1,30 @@
-.edit {
+body {
+    background-image: url("backgroundimage.jpg");
+}
+
+h1{
+    padding-left: 70px;
+    color:#443850;
+    padding-top: 70px;
+    font-family: cursive;
+}
+
+.myTextBox {
+    color: #7d8491;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 80px;
+}
+
+.Edit {
     color:blue;
     margin-left:6px ;
     margin-right: 6px;
+    font-size: 20px;
 }
 
 .delete {
-        color:red;
-        margin-left:6px ;
-        margin-right: 6px;
-    }
+    color:red;
+    margin-left:6px ;
+    margin-right: 6px;
+    font-size: 20px;
+}

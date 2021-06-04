@@ -51,7 +51,7 @@ function deleteNote(element) {
 
 function updateNote(element) {
     const noteId = element.parentElement.id
-    var newText = prompt ("Modify new text")
+    const newText = prompt ("Modify new text")
     fetch(url + "/" + `${noteId}`, {
         method: 'PUT',
         headers: {'Content-Type': 'application/json'},
@@ -73,8 +73,7 @@ function renderNoteItem(noteObj) {
 }
 
 function renderNoteText(noteListItem, noteObj) {
-    noteListItem.innerHTML = `<span class="dib w-60">${noteObj.body}</span><i class="delete" onclick="deleteNote(this.parentElement)">x</i><i class="edit" onclick = "updateNote(this.parentElement)">edit</i>`
+    noteListItem.innerHTML = `<span class="dib w-40">${noteObj.body}</span><i class="delete" onclick="deleteNote(this.parentElement)">Delete</i><i class="Edit" onclick = "updateNote(this.parentElement)">Edit</i>`
 }
-
 
 listNotes();
